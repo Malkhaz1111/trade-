@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ტრეიდინგ საიტი</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ტრეიდინგ საიტი</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">მთავარი</a></li>
+                    <li><a href="#">სტრატეგიები</a></li>
+                    <li><a href="#">ბოტი</a></li>
+                    <li><a href="#">ბაზრის ანალიზი</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="strategy-section">
+        <div class="container">
+            <h2>ტრეიდინგ სტრატეგიები</h2>
+            <div class="strategy-card">
+                <h3>Trend Following</h3>
+                <p>შეამოწმეთ, როდესაც ბაზარი მუდმივად გადის ერთ მიმართულებით.</p>
+            </div>
+            <div class="strategy-card">
+                <h3>Breakout</h3>
+                <p>ზღვრიდან გამოსვლის სტრატეგია.</p>
+            </div>
+            <div class="strategy-card">
+                <h3>Scalping</h3>
+                <p>მცირე ფასების ცვლილებების გამოყენება სწრაფი ტრანზაქციებით.</p>
+            </div>
+            <div class="strategy-card">
+                <h3>Range Trading</h3>
+                <p>ბაზრის მოძრაობა განსაზღვრული ზღვარი.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="currency-selection">
+        <div class="container">
+            <h2>აირჩიეთ საუკეთესო ვალუტა</h2>
+            <form id="currencyForm">
+                <label for="strategy">აირჩიეთ სტრატეგია:</label>
+                <select id="strategy" name="strategy">
+                    <option value="trend">Trend Following</option>
+                    <option value="breakout">Breakout</option>
+                    <option value="scalping">Scalping</option>
+                    <option value="range">Range Trading</option>
+                </select>
+                <button type="submit">გამოიყენე სტრატეგია</button>
+            </form>
+            <div id="currencyResult"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
